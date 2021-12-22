@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace Clube
 {
-    class CadastroMensalidade
+    public class CadastroMensalidade
     {
         Banco conexao = new Banco();
         SqlCommand cmd = new SqlCommand();

@@ -169,6 +169,7 @@ namespace Clube
             this.txtJurosMensal.Name = "txtJurosMensal";
             this.txtJurosMensal.Size = new System.Drawing.Size(170, 22);
             this.txtJurosMensal.TabIndex = 68;
+            this.txtJurosMensal.TextChanged += new System.EventHandler(this.txtJurosMensal_TextChanged);
             // 
             // txtDtPgto
             // 
@@ -201,6 +202,7 @@ namespace Clube
             this.txtVlrPgto.Name = "txtVlrPgto";
             this.txtVlrPgto.Size = new System.Drawing.Size(170, 22);
             this.txtVlrPgto.TabIndex = 71;
+            this.txtVlrPgto.TextChanged += new System.EventHandler(this.txtVlrPgto_TextChanged);
             // 
             // label6
             // 

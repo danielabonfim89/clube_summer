@@ -31,5 +31,21 @@ namespace Clube
         {
             this.Close();
         }
+
+        private void txtJurosMensal_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtVlrPgto_TextChanged(object sender, EventArgs e)
+        {
+            
+            mensalidade.ValorMensalidade = Convert.ToDouble(txtVlrMesnal.Text);
+            mensalidade.DataMensalidade = txtDtMensal.Text;
+            mensalidade.JurosMensalidade = Convert.ToDouble(txtJurosMensal.Text);
+            mensalidade.DataPgtoMensalidade = txtDtPgto.Text;
+
+            //txtVlrPgto = Convert.ToDouble((txtVlrMesnal * txtJurosMensal * txtDtPgto) + txtVlrMesnal);
+        }
     }
 }

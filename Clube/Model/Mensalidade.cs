@@ -14,6 +14,7 @@ namespace Clube
         private double jurosMensalidade;
         private double valorPagto;
         private string quitacaoMensalidade;
+        private int diasAtraso;
 
         public string DataMensalidade { get => dataMensalidade; set => dataMensalidade = value; }
         public double ValorMensalidade { get => valorMensalidade; set => valorMensalidade = value; }
@@ -21,7 +22,7 @@ namespace Clube
         public double JurosMensalidade { get => jurosMensalidade; set => jurosMensalidade = value; }
         public double ValorPagto { get => valorPagto; set => valorPagto = value; }
         public string QuitacaoMensalidade { get => quitacaoMensalidade; set => quitacaoMensalidade = value; }
-
+        public int DiasAtraso { get => diasAtraso; set => diasAtraso = value; }
 
         public void consultarMensalidade()
         {
@@ -31,6 +32,7 @@ namespace Clube
         public void calcularJuros()
         {
 
+            valorPagto = (valorMensalidade * jurosMensalidade * diasAtraso) + valorMensalidade;
         }
 
         public void quitarMensalidade()
